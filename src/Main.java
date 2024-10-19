@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     //Task 1
     private static void printIsLeapYearResult(int year, boolean yearIsLeap) {
@@ -35,12 +37,13 @@ public class Main {
             System.out.print("android");
 
         }
-        System.out.println("");
+        System.out.println(" ");
 
     }
 
     public static boolean isDeviseOld(int year) {
-        return year>2024;
+        int currentYear = LocalDate.now().getYear();
+        return year > currentYear  ;
     }
     //Task 3
 
